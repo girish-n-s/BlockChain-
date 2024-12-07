@@ -1,0 +1,99 @@
+/* Styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Main heading */
+#main-heading {
+    font-size: 3.5em; /* Larger font size for better visibility */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(17, 1, 240);
+}
+
+/* Welcome text - moving animation */
+#welcome {
+    font-size: 3em;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    animation: move 2s infinite alternate;
+}
+
+/* Highlighting the "Go to Disease Recognition" */
+#goto-disease-recognition {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: underline;
+    background: rgba(255, 0, 0, 0.5); /* Red background with 50% opacity */
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+    width: fit-content;
+    margin: 20px auto;
+}
+
+/* Section styling for Features */
+.features {
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for effect */
+    max-width: 80%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.features ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Animation for Welcome text */
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+.subtext {
+    font-size: 1.5em; /* Slightly larger font size for readability */
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+    color: rgb(5, 0, 0);
+}
+/* General alignment for elements */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
